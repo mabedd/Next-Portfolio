@@ -1,4 +1,10 @@
+"use client";
+
 import Hero from "@/components/Hero";
+import Grid from "@/components/Grid";
+import Experience from "@/components/Experience";
+import RecentProjects from "@/components/RecentProjects";
+import Clients from "@/components/Clients";
 import { FloatingNav } from "@/components/accternity/FloatingNav";
 
 import { navItems } from "@/data";
@@ -9,6 +15,10 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
         <Hero />
+        <Grid />
+        <RecentProjects />
+        <Clients />
+        <Experience />
       </div>
     </main>
   );
