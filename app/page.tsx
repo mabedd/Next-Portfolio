@@ -5,6 +5,9 @@ import Grid from "@/components/Grid";
 import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import Clients from "@/components/Clients";
+import MarkettingLamp from "@/components/MarkettingLamp";
+import Footer from "@/components/Footer";
+import Process from "@/components/Process";
 import { FloatingNav } from "@/components/accternity/FloatingNav";
 
 import { navItems } from "@/data";
@@ -16,9 +19,12 @@ export default function Home() {
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
+        <MarkettingLamp />
         <RecentProjects />
-        <Clients />
+        {/* <Clients /> */}
         <Experience />
+        <Process />
+        <Footer />
       </div>
     </main>
   );

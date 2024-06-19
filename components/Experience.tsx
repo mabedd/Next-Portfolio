@@ -6,7 +6,7 @@ import { Button } from "./accternity/MovingBorders";
 const Experience = () => {
   return (
     <div className="py-20 w-full">
-      <h1 className="heading">
+      <h1 className="heading text-white">
         My <span className="text-purple">work experience</span>
       </h1>
 
@@ -36,7 +36,7 @@ const Experience = () => {
                 className="lg:w-32 md:w-20 w-16"
               />
               <div className="lg:ms-5">
-                <h1 className="text-start text-xl md:text-2xl font-bold">
+                <h1 className="text-start text-xl md:text-2xl font-bold text-white">
                   {card.title}
                 </h1>
                 <p className="text-start text-white-100 mt-3 font-semibold">
