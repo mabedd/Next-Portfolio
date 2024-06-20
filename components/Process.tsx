@@ -9,50 +9,36 @@ const Process = () => {
       <h1 className="heading text-white">
         My <span className="text-purple">approach</span>
       </h1>
-      {/* remove bg-white dark:bg-black */}
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
-        {/* add des prop */}
         <Card
-          title="Planning & Strategy"
+          title="Analysis & Planning"
           icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          des="We'll work closely to define your application's objectives, understand your target audience, and outline the key features. Our discussions will cover architecture, user navigation, and essential content to ensure a clear and effective plan."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
-            // add these classed for the border rounded overflowing -> rounded-3xl overflow-hidden
             containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
           />
         </Card>
         <Card
-          title="Development & Progress Update"
+          title="Designing & Development"
           icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          des="With the plan in place, I'll dive into the creative process, blending design and development. From conceptual sketches to refined code, you'll receive regular updates to see your application evolve at every stage."
         >
           <CanvasRevealEffect
             animationSpeed={3}
-            // change bg-black to bg-pink-900
             containerClassName="bg-pink-900 rounded-3xl overflow-hidden"
             colors={[
-              // change the colors of the
               [255, 166, 158],
               [221, 255, 247],
             ]}
             dotSize={2}
           />
-          {/* Radial gradient for the cute fade */}
-          {/* remove this one */}
-          {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Development & Launch"
+          title="Deployment & Maintenance"
           icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          des="The final phase brings your website to life! I'll ensure a smooth deployment and provide ongoing maintenance to keep your site running seamlessly, addressing any issues and updating features as needed."
         >
           <CanvasRevealEffect
             animationSpeed={3}
