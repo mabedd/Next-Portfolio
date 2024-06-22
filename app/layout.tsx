@@ -19,7 +19,18 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/jsm-logo.png" sizes="any" />
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Mohammed Abed Portfolio - Full Stack Software Engineer"
+        />
+        <meta name="author" content="Mohammed" />
+        <meta
+          name="keywords"
+          content="portfolio, javascript, web development, frontend, backend, full stack, software, development, next, react, typescript"
+        />
+        <title>Mohammed's Portfolio</title>
       </head>
       <body className={inter.className}>
         <ThemeProvider

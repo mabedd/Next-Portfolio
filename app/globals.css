@@ -83,3 +83,11 @@
     @apply font-bold text-4xl md:text-5xl text-center;
   }
 }
+
+/* styles.css */
+.img-consistent {
+  width: 200px; /* Set the desired width */
+  height: 200px; /* Set the desired height */
+  transform: rotate(10deg); /* Set the desired rotation */
+  object-fit: cover; /* Ensure the image covers the entire area */
+}
