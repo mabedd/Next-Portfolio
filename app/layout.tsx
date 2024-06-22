@@ -30,7 +30,7 @@ export default function RootLayout({
           name="keywords"
           content="portfolio, javascript, web development, frontend, backend, full stack, software, development, next, react, typescript"
         />
-        <title>Mohammed's Portfolio</title>
+        <title>{`Mohammed's Portfolios`}</title>
       </head>
       <body className={inter.className}>
         <ThemeProvider

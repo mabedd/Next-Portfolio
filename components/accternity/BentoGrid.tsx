@@ -3,9 +3,6 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
-// Also install this npm i --save-dev @types/react-lottie
-import Lottie from "react-lottie";
-
 import { cn } from "@/utils/cn";
 
 import { BackgroundGradientAnimation } from "./GradientBg";
@@ -66,9 +63,11 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "mohammed.o.abed@outlook.com";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
+    if (typeof navigator !== "undefined" && navigator.clipboard) {
+      const text = "mohammed.o.abed@outlook.com";
+      navigator.clipboard.writeText(text);
+      setCopied(true);
+    }
   };
 
   return (
@@ -157,13 +156,13 @@ export const BentoGridItem = ({
           )}
           {id === 6 && (
             <div className="mt-5 relative">
-              <div
+              {/* <div
                 className={`absolute -bottom-5 right-0 ${
                   copied ? "block" : "block"
                 }`}
               >
                 <Lottie options={defaultOptions} height={200} width={400} />
-              </div>
+              </div> */}
 
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}
