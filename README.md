@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# <div align="center">My Portfolio</div>
 
-## Getting Started
+## About the Project
 
-First, run the development server:
+This portfolio is built with [Next.js](https://nextjs.org/), styled using [Tailwind CSS](https://tailwindcss.com/), and incorporates components from [Accternity UI](https://accternity-ui.com/)
 
+## Features
+
+- 🌐 **Single Page Application**: Seamless navigation and fast load times.
+- 🎨 **Custom Tailwind CSS Styling**: Fully responsive and customizable design.
+- 🧩 **Accternity UI Components**: Beautifully designed UI components for enhanced user experience.
+- 🚀 **Netlify Deployment**: Fast, secure, and reliable hosting with continuous deployment.
+
+## Tech Stack
+
+<div align="center">
+  
+![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Accternity UI](https://img.shields.io/badge/Accternity%20UI-4B32C3?style=for-the-badge&logo=ui&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-4B32C3?style=for-the-badge&logo=ui&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-%2300C7B7.svg?style=for-the-badge&logo=netlify&logoColor=white)
+
+</div>
+
+## Project Structure
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+├───app
+├───components
+│   └───accternity
+├───data
+├───public
+└───utils
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To run this project locally, follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/your-portfolio-repo.git
 
-## Learn More
+2. **Navigate to the project directory**
+   ```bash
+   cd your-repo-path
 
-To learn more about Next.js, take a look at the following resources:
+3. **Install Dependencies**
+   ```bash
+   npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Start the App**
+   ```bash
+   npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<div align="center">
+  <p>Made with ❤️ by Mohammed</p>
+</div>
