@@ -1,4 +1,5 @@
 # <div align="center">My Portfolio</div>
+<img src="public/Readme_Banner.png" />
 
 ## About the Project
 
