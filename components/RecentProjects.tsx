@@ -1,82 +1,83 @@
 "use client";
 
+import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
-import { PinContainer } from "./accternity/Pin";
+import { CardContainer, CardBody, CardItem } from "./accternity/3DCard";
+import Link from "next/link";
 
 const RecentProjects = () => {
   return (
     <div className="py-20">
-      <h1 className="heading text-white">
+      <h1 className="heading text-white text-center">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-10 mt-10">
-        {projects.map((item) => (
+        {projects.map((item, index) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw] mb-10"
+            className={`flex items-center justify-center w-full sm:w-80 md:w-96 ${
+              index >= 3 ? "mt-4" : ""
+            }`} // Adjusted margin between rows
             key={item.id}
           >
-            <PinContainer title={item.title} href={item.link}>
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-6">
-                <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
+            <CardContainer
+              className="inter-var mb-4"
+              containerClassName="py-10"
+            >
+              <CardBody className="bg-gray-900 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-gray-800 dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border">
+                <CardItem
+                  translateZ="50"
+                  className="text-xl font-bold text-neutral-300 mb-2"
                 >
-                  <img
-                    src="/bg.png"
-                    alt="bgimg"
-                    className="w-full h-full object-cover"
+                  {item.title}
+                </CardItem>
+                <CardItem
+                  as="p"
+                  translateZ="60"
+                  className="text-neutral-400 text-sm max-w-sm mt-2 mb-4"
+                >
+                  {item.des}
+                </CardItem>
+                <CardItem translateZ="100" className="w-full mt-4 mb-4">
+                  <Image
+                    src={item.img}
+                    height={600}
+                    width={1000}
+                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt={item.title}
                   />
+                </CardItem>
+                <div className="flex justify-center items-center mt-4">
+                  <div className="flex items-center">
+                    {item.iconLists.map((icon, index) => (
+                      <CardItem
+                        key={index}
+                        translateZ={10}
+                        className="border border-white/[.2] rounded-full bg-black lg:w-14 lg:h-14 w-12 h-12 flex justify-center items-center -ml-2 first:ml-0"
+                      >
+                        <Image
+                          src={icon}
+                          alt="icon"
+                          width={32}
+                          height={32}
+                          className="p-2"
+                        />
+                      </CardItem>
+                    ))}
+                  </div>
                 </div>
-                <img
-                  src={item.img}
-                  alt="cover"
-                  className="z-10 absolute inset-0 w-full h-auto rotate-3"
-                  style={{
-                    top: "50%",
-                    left: "50%",
-                    transform: "translate(-50%, -50%) rotate(3deg)",
-                  }}
-                />
-              </div>
-
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 mb-2 text-white">
-                {item.title}
-              </h1>
-
-              <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2 mb-4"
-                style={{
-                  color: "#BEC1DD",
-                }}
-              >
-                {item.des}
-              </p>
-
-              <div className="flex items-center justify-between mt-4">
-                <div className="flex items-center">
-                  {item.iconLists.map((icon, index) => (
-                    <div
-                      key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center -ml-2 first:ml-0"
-                    >
-                      <img src={icon} alt="icon5" className="p-2" />
-                    </div>
-                  ))}
-                </div>
-
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center mt-4">
                   <p
-                    className="flex lg:text-xl md:text-xs text-sm text-purple"
+                    className="flex lg:text-xl md:text-xs text-sm text-purple cursor-pointer"
                     onClick={() => window.open(item.link, "_blank")}
                   >
                     Check Live Site
                   </p>
                   <FaLocationArrow className="ml-2" color="#CBACF9" />
                 </div>
-              </div>
-            </PinContainer>
+              </CardBody>
+            </CardContainer>
           </div>
         ))}
       </div>

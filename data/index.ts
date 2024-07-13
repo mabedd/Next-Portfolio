@@ -75,7 +75,7 @@ export const projects = [
     title: "Shoppy Admin",
     des: "Fully comprehensive Dashboard for managing eCommerce websites.",
     img: "/p1.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "syncfusion.png"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/syncfusion.png"],
     link: "https://admin-shoppy.netlify.app",
   },
   {
