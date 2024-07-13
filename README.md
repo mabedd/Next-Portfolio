@@ -3,13 +3,13 @@
 
 ## About the Project
 
-This portfolio is built with [Next.js](https://nextjs.org/), styled using [Tailwind CSS](https://tailwindcss.com/), and incorporates components from [Accternity UI](https://accternity-ui.com/)
+This portfolio is built with [Next.js](https://nextjs.org/), styled using [Tailwind CSS](https://tailwindcss.com/), and incorporates components from [Aceternity UI](https://Aceternity-ui.com/)
 
 ## Features
 
 - 🌐 **Single Page Application**: Seamless navigation and fast load times.
 - 🎨 **Custom Tailwind CSS Styling**: Fully responsive and customizable design.
-- 🧩 **Accternity UI Components**: Beautifully designed UI components for enhanced user experience.
+- 🧩 **Aceternity UI Components**: Beautifully designed UI components for enhanced user experience.
 - 🚀 **Netlify Deployment**: Fast, secure, and reliable hosting with continuous deployment.
 
 ## Tech Stack
