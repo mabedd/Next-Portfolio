@@ -5,7 +5,7 @@ import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 
 const Footer = () => {
-  const words = ["reliable", "thrilling", "innovative", "efficient"];
+  const words = ["RELIABLE", "THRILLING", "INNOVATIVE", "EFFICIENT"];
 
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
@@ -18,8 +18,9 @@ const Footer = () => {
       </div>
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw] text-white">
-          Ready to solve your problems with{" "}
-          <FlipWords className="text-purple" words={words} />
+          Ready to solve your problems with <br />
+          <FlipWords className="text-purple m-2" words={words} />
+          <br />
           technology solutions ?
         </h1>
         <div className="mt-4">

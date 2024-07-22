@@ -4,7 +4,6 @@ import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import { CardContainer, CardBody, CardItem } from "./accternity/3DCard";
-import Link from "next/link";
 
 const RecentProjects = () => {
   return (
@@ -13,7 +12,7 @@ const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-10 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-6 mt-10">
         {projects.map((item, index) => (
           <div
             className={`flex items-center justify-center w-full sm:w-80 md:w-96 ${

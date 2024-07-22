@@ -8,6 +8,7 @@ import {
   MarkettingLamp,
   Footer,
   Process,
+  TechStack,
 } from "../components";
 import { TracingBeam } from "@/components/accternity/TracingBeam";
 import { useEffect, useState } from "react";
@@ -39,6 +40,7 @@ export default function Home() {
             {isMobile ? (
               <>
                 <Grid />
+                <TechStack />
                 <RecentProjects />
                 <Experience />
                 <Process />
@@ -47,7 +49,8 @@ export default function Home() {
             ) : (
               <TracingBeam className="relative">
                 <Grid />
-                <MarkettingLamp />
+                {/* <MarkettingLamp /> */}
+                <TechStack />
                 <RecentProjects />
                 <Experience />
                 <Process />
